@@ -2,9 +2,10 @@ import React from "react";
 
 const Song = (props) =>
         <React.Fragment>
-          <a href="">{props.position}</a>
-          <a href="">{props.title}</a>
-          <a href="">{props.artist}</a>
+          <span className="image"><img src={props.image} alt={props.title}/></span>
+          <span className="position">{props.position}</span>
+          <span className="title">{props.title}</span>
+          <span className="artist">{props.artist}</span>
         </React.Fragment>
 
 export default Song;

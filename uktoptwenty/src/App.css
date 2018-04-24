@@ -26,3 +26,65 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/* EXTRA CSS ADDED BY SARAH */
+
+@import url('https://fonts.googleapis.com/css?family=Jua');
+
+#root {
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  background-color: #e4e4e4;
+}
+
+ul {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+span {
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+h1 {
+  font-family: 'Jua', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 10px;
+  font-weight:lighter;
+}
+
+img {
+}
+
+
+.position {
+  font-weight: 600;
+}
+
+.title {
+  flex: auto;
+  font-weight: 400;
+  color: black;
+}
+
+.artist {
+  flex: auto;
+  font-weight: 300;
+  color: black;
+}

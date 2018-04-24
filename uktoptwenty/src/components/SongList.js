@@ -6,8 +6,13 @@ const SongList = (props) => {
   const songs = props.songs.map((song, index) => {
     chartPosition += 1;
     return (
-      <li>
-        <Song key={index} position={chartPosition} title={song["im:name"].label} artist={song["im:artist"].label}/>
+      <li key={index}>
+        <Song
+          position={chartPosition}
+          title={song["im:name"].label}
+          artist={song["im:artist"].label}
+          image={song["im:image"][0].label}
+        />
       </li>
     )
   });
