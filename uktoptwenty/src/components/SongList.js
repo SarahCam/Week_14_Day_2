@@ -2,18 +2,20 @@ import React from 'react';
 import Song from "./Song";
 
 const SongList = (props) => {
+  let chartPosition = 0;
   const songs = props.songs.map((song, index) => {
+    chartPosition += 1;
     return (
-      <ul>
-        <Song key={index} title={song["im:name"].label} artist={song["im:artist"].label}/>
-      </ul>
+      <li>
+        <Song key={index} position={chartPosition} title={song["im:name"].label} artist={song["im:artist"].label}/>
+      </li>
     )
   });
 
   return (
-    <React.Fragment>
+    <ul>
       {songs}
-    </React.Fragment>
+    </ul>
   )
 }
 
