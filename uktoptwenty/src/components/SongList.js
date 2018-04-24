@@ -1,15 +1,19 @@
 import React from 'react';
+import Song from "./Song";
 
 const SongList = (props) => {
   const songs = props.songs.map((song, index) => {
-    return <li value={index} key={index}>{song["im:name"].label}</li>
+    return (
+      <ul>
+        <Song key={index} title={song["im:name"].label} artist={song["im:artist"].label}/>
+      </ul>
+    )
   });
 
-
   return (
-    <ul id="song-list">
+    <React.Fragment>
       {songs}
-    </ul>
+    </React.Fragment>
   )
 }
 
