@@ -51,6 +51,7 @@ ul {
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  opacity: 0.9;
   background-color: white;
 }
 
@@ -60,7 +61,7 @@ li {
 
 span {
   padding-right: 10px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 h1 {
@@ -85,6 +86,8 @@ h2 {
 .position {
   flex: auto;
   font-weight: 600;
+  font-size: 18px;
+  font-family: 'Fredericka the Great', cursive;
 }
 
 .title {
@@ -98,3 +101,15 @@ h2 {
   font-weight: 300;
   color: black;
 }
+
+.button {
+         background-color: #404040;
+         padding: 5px 10px;
+         display: inline-block;
+         text-decoration: none;
+         color: #FFFFFF;
+         border-radius: 3px;
+         opacity:0.8;
+         font-family: 'Fredericka the Great', cursive;
+}
+.button:hover{ background-color: #0066FF;}

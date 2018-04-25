@@ -12,6 +12,7 @@ const SongList = (props) => {
           title={song["im:name"].label}
           artist={song["im:artist"].label}
           image={song["im:image"][0].label}
+          tune={song.link[1].attributes.href}
         />
       </li>
     )
